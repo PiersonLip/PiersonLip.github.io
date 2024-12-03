@@ -17,24 +17,26 @@
     </style>
 </head>
 <body>
-    <h1>XB Graphs</h1>
+    <h1>HR Diagram of Donor Stars in Ultra Compact X-ray Binaries Graphs</h1>
     <label for="graphSelector">Choose a graph:</label>
     <select id="graphSelector">
-        <option value="graph1">Mass Transfer Rate</option>
-        <option value="graph2">Orbital Period</option>
-        <option value="graph3">Accretor Mass</option>
-        <option value="graph4">Donor Mass</option>
-        <option value="graph5">Donor ṁ</option>
-        <option value="graph6">Surface Hydrogen</option>
-        <option value="graph7">Suface Helium</option>
-        <option value="graph8">Surface Carbon</option>
+        <option value="lg_mtransfer_rate_log10_F_star_radius_5">Mass Transfer Rate</option>
+        <option value="orbital_period_log10_F_star_radius_5">Orbital Period</option>
+        <option value="S1_mass_log10_F_star_radius_5">Accretor Mass</option>
+        <option value="S2_mass_log10_F_star_radius_5">Donor Mass</option>
+        <option value="S2_lg_mdot_log10_F_star_radius_5">Donor ṁ</option>
+        <option value="S2_surface_h1_log10_F_star_radius_5">Surface Hydrogen</option>
+        <option value="S2_surface_he4_log10_F_star_radius_5">Suface Helium</option>
+        <option value="S2_surface_c12_log10_F_star_radius_5">Surface Carbon</option>
+        <option value="state_log10_F_star_radius_5">Evolutionary State</option>
+
     </select>
 
     <label for="altCheckbox">Disable Star Radius</label>
     <input type="checkbox" id="altCheckbox">
 
     <div id="graphContainer">
-        <iframe id="graphFrame" src="graphs/graph1.html"></iframe>
+        <iframe id="graphFrame" src="graphs/lg_mtransfer_rate_log10_F_star_radius_5.html"></iframe>
     </div>
 
     <script>
